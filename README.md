@@ -65,7 +65,7 @@ F1 Score: 91%
 
 ```
           precision    recall  f1-score   support
-```
+
 
 Non-Match       0.00      0.00      0.00         0
 Match       1.00      0.84      0.91       403
@@ -140,7 +140,3 @@ B.Tech CSE (AI), Institute of Engineering & Management
 
 ```
 
----
-
-
-```
