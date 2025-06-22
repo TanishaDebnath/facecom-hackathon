@@ -27,9 +27,7 @@ Accuracy: 91.5%
 F1 Score: 91.2%
 
 ```
-```
 
-```
           precision    recall  f1-score   support
        0       0.84      0.69      0.76        78
        1       0.93      0.97      0.95       325
@@ -59,9 +57,6 @@ Accuracy: 84%
 Precision: 100%
 Recall: 84%
 F1 Score: 91%
-
-```
-```
 
 ```
           precision    recall  f1-score   support
