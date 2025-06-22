@@ -5,30 +5,6 @@
 
 🚀 A robust deep learning pipeline for gender classification and face recognition under adverse visual conditions, using the FACECOM dataset.
 
-## 📁 Project Structure
-
-```
-
-facecom\_dataset/
-├── Task\_A/                       # Gender classification pipeline
-│   └── facecom\_task\_a.py
-├── Task\_B/                       # Face recognition pipeline
-│   └── facecom\_task\_b.py
-├── processed\_gender/            # Preprocessed faces for Task A
-│   ├── train/
-│   └── val/
-├── processed\_faces/             # Preprocessed faces for Task B
-│   ├── train/
-│   └── val/
-├── gender\_model.pth             # Trained gender classification model
-├── face\_recognition\_model.pth   # Saved ResNet model (optional)
-├── task\_b\_results.csv           # Final results for Task B
-├── requirements.txt             # Required dependencies
-└── README.md
-
-```
-
----
 
 ## 🧠 Task A – Gender Classification
 
