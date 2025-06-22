@@ -1,0 +1,29 @@
+
+
+
+✅ Gender Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      0.47      0.63        78
+           1       0.89      0.99      0.94       325
+
+    accuracy                           0.89       403
+   macro avg       0.91      0.73      0.78       403
+weighted avg       0.89      0.89      0.88       403
+
+Accuracy: 0.8908, F1 Score: 0.8763
+
+
+🎉 Task A (Gender Classification) Completed!
+
+📊 Final Evaluation Report:
+              precision    recall  f1-score   support
+
+        Male       0.93      0.47      0.63        78
+      Female       0.89      0.99      0.94       325
+
+    accuracy                           0.89       403
+   macro avg       0.91      0.73      0.78       403
+weighted avg       0.89      0.89      0.88       403
+
+✅ Model saved as gender_model.pth
