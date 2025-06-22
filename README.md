@@ -5,6 +5,7 @@
 
 🚀 A robust deep learning pipeline for gender classification and face recognition under adverse visual conditions, using the FACECOM dataset.
 
+---
 
 ## 🧠 Task A – Gender Classification
 
@@ -16,13 +17,17 @@
 1. Face detection using OpenCV Haar cascades
 2. Preprocessing images to 224×224
 3. Fine-tuned `ResNet18` model
-4. Training and validation using Torch + Sklearn
+4. Training and validation using PyTorch + Sklearn
 
 ### 📊 Sample Results:
+
 ```
 
 Accuracy: 91.5%
 F1 Score: 91.2%
+
+```
+```
 
 ```
           precision    recall  f1-score   support
@@ -37,22 +42,26 @@ F1 Score: 91.2%
 ## 🧠 Task B – Face Recognition (Matching)
 
 ### ✅ Overview:
-- Input: Validation faces vs database faces
+- Input: Validation faces vs training database faces
 - Output: Whether it matches a known identity or not
 
 ### 🔧 Steps:
-1. Extract features using pretrained `ResNet18` (fc removed)
-2. Cosine similarity matching between val/train
-3. Match if similarity ≥ threshold (0.75 or 0.90)
+1. Extract embeddings using pretrained `ResNet18` (fc removed)
+2. Use cosine similarity to match validation vs training faces
+3. Match if similarity ≥ threshold (default 0.75 for labeling)
 4. Save results and calculate evaluation metrics
 
 ### 📊 Sample Results:
+
 ```
 
 Accuracy: 84%
 Precision: 100%
 Recall: 84%
 F1 Score: 91%
+
+```
+```
 
 ```
           precision    recall  f1-score   support
@@ -71,7 +80,7 @@ Match       1.00      0.84      0.91       403
 pip install -r requirements.txt
 ````
 
-Your `requirements.txt` should include:
+### `requirements.txt` includes:
 
 ```
 torch
@@ -85,12 +94,13 @@ Pillow
 ```
 
 ---
+
 ## 📥 Download Pretrained Models
 
-Download and save these `.pth` files in the project root or `Task_A`/`Task_B` folder as appropriate:
+Download and save the following `.pth` model files in the respective folders:
 
-- 🧑‍🦰 [gender_model.pth (Task A)](https://drive.google.com/file/d/1ChcBiq-dpOjkJcRyXu18S-uMxC8LpkXR/view?usp=sharing)
-- 🧑‍🦱 [face_recognition_model.pth (Task B)](https://drive.google.com/file/d/1Xkwl3xrfl2MUC5zJWC9XZRfP3pOuwvBR/view?usp=sharing)
+* 🧑‍🦰 [gender\_model.pth – Task A](https://drive.google.com/file/d/1ChcBiq-dpOjkJcRyXu18S-uMxC8LpkXR/view?usp=sharing) → Place in `Task_A/`
+* 🧑‍🦱 [face\_recognition\_model.pth – Task B](https://drive.google.com/file/d/1Xkwl3xrfl2MUC5zJWC9XZRfP3pOuwvBR/view?usp=sharing) → Place in `Task_B/`
 
 ---
 
@@ -114,17 +124,23 @@ python facecom_task_b.py
 
 ## 🧾 Notes
 
-* You can optionally load `*.pth` models to skip retraining.
-* Works on both CPU and GPU.
-* Matching threshold is tunable via script (default: `0.75` for label, `0.90` for eval).
+* You can optionally load `.pth` models to skip retraining.
+* Code is GPU-compatible (runs on CPU as fallback).
+* Thresholds are tunable within scripts (`0.75` for labeling, `0.90` for evaluation).
 
 ---
 
-## 🙌 Team
+## 🙌 Author
 
 👩‍💻 **Tanisha Debnath**
 B.Tech CSE (AI), Institute of Engineering & Management
-GitHub: [TanishaDebnath](https://github.com/TanishaDebnath)
+🔗 GitHub: [TanishaDebnath](https://github.com/TanishaDebnath)
 
 ---
 
+```
+
+---
+
+
+```
