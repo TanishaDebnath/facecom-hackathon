@@ -85,6 +85,14 @@ Pillow
 ```
 
 ---
+## 📥 Download Pretrained Models
+
+Download and save these `.pth` files in the project root or `Task_A`/`Task_B` folder as appropriate:
+
+- 🧑‍🦰 [gender_model.pth (Task A)](https://drive.google.com/file/d/1ChcBiq-dpOjkJcRyXu18S-uMxC8LpkXR/view?usp=sharing)
+- 🧑‍🦱 [face_recognition_model.pth (Task B)](https://drive.google.com/file/d/1Xkwl3xrfl2MUC5zJWC9XZRfP3pOuwvBR/view?usp=sharing)
+
+---
 
 ## ▶️ Running the Code
 
