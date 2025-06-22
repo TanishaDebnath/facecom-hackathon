@@ -27,3 +27,4 @@ Accuracy: 0.8908, F1 Score: 0.8763
 weighted avg       0.89      0.89      0.88       403
 
 ✅ Model saved as gender_model.pth
+
