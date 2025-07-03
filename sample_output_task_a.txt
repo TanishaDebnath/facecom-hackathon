@@ -1,17 +1,14 @@
-
-
-
 ✅ Gender Classification Report:
               precision    recall  f1-score   support
 
-           0       0.93      0.47      0.63        78
-           1       0.89      0.99      0.94       325
+           0       0.76      0.77      0.76        78
+           1       0.94      0.94      0.94       325
 
-    accuracy                           0.89       403
-   macro avg       0.91      0.73      0.78       403
-weighted avg       0.89      0.89      0.88       403
+    accuracy                           0.91       403
+   macro avg       0.85      0.86      0.85       403
+weighted avg       0.91      0.91      0.91       403
 
-Accuracy: 0.8908, F1 Score: 0.8763
+Accuracy: 0.9082, F1 Score: 0.9084
 
 
 🎉 Task A (Gender Classification) Completed!
@@ -19,12 +16,30 @@ Accuracy: 0.8908, F1 Score: 0.8763
 📊 Final Evaluation Report:
               precision    recall  f1-score   support
 
-        Male       0.93      0.47      0.63        78
-      Female       0.89      0.99      0.94       325
+        Male       0.76      0.77      0.76        78
+      Female       0.94      0.94      0.94       325
 
-    accuracy                           0.89       403
-   macro avg       0.91      0.73      0.78       403
-weighted avg       0.89      0.89      0.88       403
+    accuracy                           0.91       403
+   macro avg       0.85      0.86      0.85       403
+weighted avg       0.91      0.91      0.91       403
 
 ✅ Model saved as gender_model.pth
 
+📊 TRAINING METRICS
+Training Accuracy: 97.94%
+Training Precision: 98.10%
+Training Recall: 97.94%
+
+    accuracy                           0.91       403
+
+    accuracy                           0.91       403
+   macro avg       0.85      0.86      0.85       403
+weighted avg       0.91      0.91      0.91       403
+
+✅ Model saved as gender_model.pth
+
+📊 TRAINING METRICS
+Training Accuracy: 97.94%
+Training Precision: 98.10%
+Training Recall: 97.94%
+Training F1 Score: 97.98%
