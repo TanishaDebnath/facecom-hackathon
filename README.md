@@ -1,8 +1,8 @@
 
 ````markdown
-# 🧠 Facecom Hackathon 2025 – Robust Face & Gender Recognition
+# 🧠 Comsys Hackathon 2025 – Robust Face & Gender Recognition
 
-This repository contains my solution for the **Facecom Hackathon 2025** conducted by **Jadavpur University**, focused on robust face recognition and gender classification under adverse visual conditions.
+This repository contains my solution for the **Comsys Hackathon 2025** conducted by **Jadavpur University**, focused on robust face recognition and gender classification under adverse visual conditions.
 
 ## 📁 Tasks Overview
 
@@ -92,7 +92,10 @@ Match distorted face images against a known database using deep features (embedd
    python facecom_task_b.py
    ```
 
----
+### 6. 🔐 **Saved Models**
+- [`gender_model.pth`](https://drive.google.com/file/d/1ChcBiq-dpOjkJcRyXu18S-uMxC8LpkXR/view?usp=sharing) – Trained binary classification model for Task A (Gender Classification).
+- [`face_recognition_model.pth`](https://drive.google.com/file/d/1Xkwl3xrfl2MUC5zJWC9XZRfP3pOuwvBR/view?usp=sharing) – Embedding-based model backbone for Task B (Face Recognition).
+
 
 ## 📂 Folder Structure
 
@@ -127,7 +130,7 @@ B.Tech CSE (AI) | Institute of Engineering and Management, Kolkata
 
 ## 🏁 Acknowledgements
 
-* **FACECOM Hackathon Team**
+* **Comsys Hackathon Team**
 * **Jadavpur University**
 * All open-source contributors to PyTorch, OpenCV, and scikit-learn
 
