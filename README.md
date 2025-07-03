@@ -4,8 +4,6 @@
 
 This repository contains my solution for the **Facecom Hackathon 2025** conducted by **Jadavpur University**, focused on robust face recognition and gender classification under adverse visual conditions.
 
----
-
 ## 📁 Tasks Overview
 
 ### 🔹 Task A – Gender Classification (Binary)
@@ -26,14 +24,12 @@ Match distorted face images against a known database using deep features (embedd
 
 ## 🛠 Technologies Used
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
-[![TQDM](https://img.shields.io/badge/TQDM-FF6F00?style=for-the-badge)](https://tqdm.github.io/)
-[![Pillow](https://img.shields.io/badge/Pillow-3693F3?style=for-the-badge&logo=python&logoColor=white)](https://python-pillow.org/)
+- Python 🐍
+- PyTorch 🔥
+- OpenCV
+- scikit-learn
+- torchvision
+- tqdm, pandas, PIL
 
 ---
 
@@ -137,7 +133,3 @@ B.Tech CSE (AI) | Institute of Engineering and Management, Kolkata
 
 ```
 
----
-
-
-```
