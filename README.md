@@ -127,9 +127,12 @@ python facecom_task_b.py
 
 ## 🙌 Author
 
-👩‍💻 **Tanisha Debnath**
+👩‍💻 **Tanisha Debnath** and **Ishika Dutta**
 B.Tech CSE (AI), Institute of Engineering & Management
+B.Tech CSE , Institute Of Engineering & Management 
 🔗 GitHub: [TanishaDebnath](https://github.com/TanishaDebnath)
+🔗 GitHub:https://github.com/ISHUCODEZ
+
 
 ---
 
