@@ -1,4 +1,4 @@
-             precision    recall  f1-score   support
+                    precision    recall  f1-score   support
 
    Non-Match       0.00      0.00      0.00         0
        Match       1.00      0.84      0.91       403
@@ -11,3 +11,22 @@ weighted avg       1.00      0.84      0.91       403
 🎯 Precision: 1.00
 📈 Recall:    0.84
 ⚖️ F1 Score:  0.91
+✅ Model saved as face_recognition_model.pth
+
+📊 TRAINING SET EVALUATION
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 832/832 [01:17<00:00, 10.68it/s] 
+
+📊 Training Evaluation Report:
+              precision    recall  f1-score   support
+
+   Non-Match       0.00      0.00      0.00         0
+       Match       1.00      1.00      1.00      1800
+
+    accuracy                           1.00      1800
+   macro avg       0.50      0.50      0.50      1800
+weighted avg       1.00      1.00      1.00      1800
+
+✅ Training Accuracy:  100.00%
+🎯 Training Precision: 100.00%
+📈 Training Recall:    100.00%
+⚖️ Training F1 Score:  100.00%
