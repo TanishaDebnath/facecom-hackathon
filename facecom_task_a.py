@@ -145,3 +145,32 @@ print(classification_report(all_labels, all_preds, target_names=["Male", "Female
 # Save the model
 torch.save(model_gender.state_dict(), "gender_model.pth")
 print("✅ Model saved as gender_model.pth")
+
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+
+# 📊 TRAINING METRICS
+model_gender.eval()
+
+train_preds = []
+train_labels = []
+
+with torch.no_grad():
+    for images, labels in gender_train_loader:
+        images = images.to(device)
+        labels = labels.to(device)
+        outputs = model_gender(images)
+        _, preds = torch.max(outputs, 1)
+        train_preds.extend(preds.cpu().numpy())
+        train_labels.extend(labels.cpu().numpy())
+
+acc = accuracy_score(train_labels, train_preds) * 100
+prec = precision_score(train_labels, train_preds, average='weighted') * 100
+rec = recall_score(train_labels, train_preds, average='weighted') * 100
+f1 = f1_score(train_labels, train_preds, average='weighted') * 100
+
+print("\n📊 TRAINING METRICS")
+print(f"Training Accuracy: {acc:.2f}%")
+print(f"Training Precision: {prec:.2f}%")
+print(f"Training Recall: {rec:.2f}%")
+print(f"Training F1 Score: {f1:.2f}%")
