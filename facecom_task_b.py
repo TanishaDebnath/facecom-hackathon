@@ -115,3 +115,57 @@ print(f"⚖️ F1 Score:  {f1_score(true_labels, pred_labels):.2f}")
 # Save model
 torch.save(model.state_dict(), "face_recognition_model.pth")
 print("✅ Model saved as face_recognition_model.pth")
+
+
+
+
+# ✅ TRAINING METRICS
+print("\n📊 TRAINING SET EVALUATION")
+
+train_results = []
+
+for train_person_folder in tqdm(os.listdir(train_dir)):
+    train_person_path = os.path.join(train_dir, train_person_folder)
+    if not os.path.isdir(train_person_path):
+        continue
+    for train_img_file in os.listdir(train_person_path):
+        train_img_path = os.path.join(train_person_path, train_img_file)
+        train_embedding = extract_embedding(train_img_path)
+        if train_embedding is None:
+            continue
+
+        similarities = [np.dot(train_embedding, db_emb) for db_emb in db_embeddings]
+        best_idx = np.argmax(similarities)
+        best_score = similarities[best_idx]
+        best_match_img = db_image_names[best_idx]
+
+        label = 1 if best_score >= 0.75 else 0
+
+        train_results.append({
+            "train_image": f"{train_person_folder}/{train_img_file}",
+            "matched_image": best_match_img,
+            "similarity": best_score,
+            "label": label
+        })
+
+train_df = pd.DataFrame(train_results)
+true_train_labels = train_df['label'].values
+pred_train_labels = [1 if sim >= 0.90 else 0 for sim in train_df['similarity'].values]
+
+print("\n📊 Training Evaluation Report:")
+
+print(classification_report(
+    true_train_labels,
+    pred_train_labels,
+    labels=[0, 1],
+    target_names=["Non-Match", "Match"],
+    zero_division=0
+))
+
+
+
+
+print(f"✅ Training Accuracy:  {accuracy_score(true_train_labels, pred_train_labels) * 100:.2f}%")
+print(f"🎯 Training Precision: {precision_score(true_train_labels, pred_train_labels) * 100:.2f}%")
+print(f"📈 Training Recall:    {recall_score(true_train_labels, pred_train_labels) * 100:.2f}%")
+print(f"⚖️ Training F1 Score:  {f1_score(true_train_labels, pred_train_labels) * 100:.2f}%")
