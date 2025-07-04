@@ -122,8 +122,9 @@ facecom-hackathon/
 
 ## 🙋‍♀️ Author
 
-**Tanisha Debnath**
+**Tanisha Debnath** **Ishika Dutta**
 B.Tech CSE (AI) | Institute of Engineering and Management, Kolkata
+B.Tech CSE | Institute of Engineering and Management, Kolkata
 🔗 [Portfolio](https://tanisha-debnath-portfolio.web.app) • [GitHub](https://github.com/TanishaDebnath)
 
 ---
